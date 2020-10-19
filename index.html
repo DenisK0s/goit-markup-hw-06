@@ -20,8 +20,7 @@
 				<nav class="navigation">
 					<!-- Logo -->
 					<a href="./index.html" aria-label="Логотип Веб Студии" lang="en" class="logo link">
-						<span class="logo-web">Web</span>
-						<span class="logo-studio-black">Studio</span>
+						<span class="logo-web">Web</span><span class="logo-studio-black">Studio</span>
 					</a>
 
 					<!-- Navigation list-->
@@ -66,14 +65,14 @@
 			<section class="hero">
 				<div class="container">
 					<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-					<button type="button" class="main-button" data-modal-open>Заказать услугу</button>
+					<button type="button" class="main-btn" data-modal-open>Заказать услугу</button>
 				</div>
 			</section>
 
 			<!--Advantages-->
 			<section class="advantages">
 				<div class="container">
-					<h2 hidden>Наши преимущества</h2>
+					<h2 visually-hidden>Наши преимущества</h2>
 					<ul class="advantages-list list">
 						<li class="advantages-list-item icon-antena">
 							<h3 class="advantages-list-title">Внимание к деталям</h3>
@@ -344,10 +343,11 @@
 		<!-- Footer -->
 		<footer class="footer">
 			<div class="container">
+
+				<!-- Address -->
 				<div class="address-box">
 					<a href="./index.html" aria-label="Логотип Веб Студии" lang="en" class="logo link">
-						<span class="logo-web">Web</span>
-						<span class="logo-studio-white">Studio</span>
+						<span class="logo-web">Web</span><span class="logo-studio-white">Studio</span>
 					</a>
 					<address class="address">
 						<ul class="address-list list">
@@ -364,6 +364,8 @@
 						</ul>
 					</address>
 				</div>
+
+				<!-- Social-links -->
 				<div class="social-links-box">
 					<p class="box-title">присоединяйтесь</p>
 					<ul class="social-links-list list">
@@ -397,6 +399,21 @@
 						</li>
 					</ul>
 				</div>
+
+					<!-- Form-subscription -->
+				<form action="#" class="subscription-box">
+					<p class="box-title">Подпишитесь на рассылку</p>
+					<div class="subscription-wrapper">
+						<label for="mail" class="subscription-mail">E-mail</label>
+						<input type="email" class="subscription-input" name="mail" id="mail" />
+						<button type="submit" class="subscription-btn">
+							<span class="subscription-btn-text">Подписаться</span>
+							<svg class="subscription-icon" width="24" height="24">
+								<use href="./Images/sprite.svg#icon-icon-send"></use>
+							</svg>
+						</button>
+					</div>
+				</form>
 			</div>
 		</footer>
 
@@ -407,6 +424,48 @@
 							<use href="./Images/sprite.svg#icon-close-black-18dp-2-1"></use>
 						</svg>
 					</button>
+					<h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+					<form action="#" class="modal-form">
+						<label class="modal-form-field">
+							Имя 
+							<span class="modal-form-wrapper">
+								<input class="modal-form-input" type="text" name="user-name" required>
+								<svg class="input-icon">
+									<use href="./Images/sprite.svg#icon-person-black-18dp-1"></use>
+								</svg>
+							</span>
+						</label>
+						<label class="modal-form-field">
+							Телефон
+							<span class="modal-form-wrapper">
+								<input class="modal-form-input" type="tel" name="user-phone" required>
+								<svg class="input-icon">
+									<use href="./Images/sprite.svg#icon-phone-black-18dp-1"></use>
+								</svg>
+							</span>
+						</label>
+						<label  class="modal-form-field">
+							Почта
+							<span class="modal-form-wrapper">
+								<input class="modal-form-input" type="email" name="user-mail" required>
+								<svg class="input-icon">
+									<use href="./Images/sprite.svg#icon-email-black-18dp-1"></use>
+								</svg>
+							</span>
+						</label>
+						<label class="modal-form-message-field">
+							Комментарий
+							<textarea class="modal-form-message" name="message" placeholder="Введите текст"></textarea>
+						</label>
+						<div class="form-message-wrapper">
+							<input class="modal-form-agreement visually-hidden" type="checkbox" name="agreement" value="accept-agreement"
+								id="agreement">
+							<label class="modal-check-agreement" for="agreement">Соглашаюсь с рассылкой и принимаю &#160
+								<a class="modal-check-link" href="#">Условия договора</a>
+							</label>
+						</div>
+						<button class="modal-form-btn" type="submit">Отправить</button>
+					</form>
 				</div>
 		</div>
 
