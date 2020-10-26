@@ -109,18 +109,6 @@
 		position: relative;
 	}
 
-	&-message-field {
-		display: inline-block;
-		margin-bottom: 20px;
-
-		color: #757575;
-		font-family: $main-font;
-		font-weight: $main-font-weight;
-		font-size: 12px;
-		line-height: 1.166;
-		letter-spacing: 0.01em;
-	}
-
 	&-input {
 		display: block;
 		width: 448px;
@@ -169,6 +157,18 @@
 		resize: none;
 
 		cursor: pointer;
+
+		&-field {
+			display: inline-block;
+			margin-bottom: 20px;
+
+			color: #757575;
+			font-family: $main-font;
+			font-weight: $main-font-weight;
+			font-size: 12px;
+			line-height: 1.166;
+			letter-spacing: 0.01em;
+		}
 
 		&:focus {
 			outline: none;
