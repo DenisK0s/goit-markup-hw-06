@@ -167,17 +167,6 @@ img {
   position: relative;
 }
 
-.modal-form-message-field {
-  display: inline-block;
-  margin-bottom: 20px;
-  color: #757575;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.166;
-  letter-spacing: 0.01em;
-}
-
 .modal-form-input {
   display: block;
   width: 448px;
@@ -221,6 +210,17 @@ img {
   border-radius: 4px;
   resize: none;
   cursor: pointer;
+}
+
+.modal-form-message-field {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.01em;
 }
 
 .modal-form-message:focus {
@@ -306,7 +306,7 @@ img {
 
 .modal-form-agreement:focus + .modal-form-agreement-check::before {
   background-color: #2196f3;
-  background-image: url(/Images/icons-svg/icon-check.svg);
+  background-image: url(../Images/icons-svg/icon-check.svg);
   border-radius: 2px;
 }
 
